@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.fwf_bbs</groupId>
+    <artifactId>forum-provider-api</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>forum-provider-api</name>
+    <packaging>pom</packaging>
+    <description>forum-provider-api</description>
+    <properties>
+        <java.version>11</java.version>
+    </properties>
+
+    <parent>
+        <artifactId>forum-backend-service</artifactId>
+        <groupId>com.fwf_bbs</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <modules>
+        <module>forum-provider-comment-api</module>
+        <module>forum-provider-demo-api</module>
+        <module>forum-provider-topic-api</module>
+        <module>forum-provider-user-api</module>
+        <module>forum-provider-admin-api</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.fwf_bbs</groupId>
+            <artifactId>forum-generator</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+            <version>2021.0.4.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-openfeign -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <version>3.1.4</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-loadbalancer -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-loadbalancer</artifactId>
+            <version>3.1.4</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-datasource-nacos -->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-datasource-nacos</artifactId>
+            <version>1.8.5</version>
+        </dependency>
+
+
+    </dependencies>
+
+
+</project>
