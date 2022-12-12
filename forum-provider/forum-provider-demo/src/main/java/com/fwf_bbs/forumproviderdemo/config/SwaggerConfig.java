@@ -19,7 +19,7 @@ public class SwaggerConfig extends BaseSwaggerConfig {
     public SwaggerProperties swaggerProperties() {
         return SwaggerProperties.builder()
                 .apiBasePackage("com.macro.mall.search.controller")
-                .title("mall搜索系统")
+                .title("test搜索系统")
                 .description("mall搜索相关接口文档")
                 .contactName("macro")
                 .version("1.0")
